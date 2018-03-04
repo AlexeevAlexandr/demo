@@ -8,12 +8,12 @@ public class demo2 {
         int n=sc.nextInt();
         String ans="";
         if(n%2==1){
-            ans = "Weird";
+           ans = "Weird";
         }
-        else{
+       else{
 
-            if(n>1 || n<6) {ans="Not Weird";}
-            if(n>5 || n<21){ans="Weird";}
+            if((n>1) && (n<6)) {ans="Not Weird";}
+            if((n>5) && (n<21)){ans="Weird";}
             if(n>20) {ans="Not Weird";}
 
         }
