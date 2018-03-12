@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class demo11 {
+class if_else_switch_case {
     public static void main(String args[]) {
         try {
             Scanner sd = new Scanner(System.in);

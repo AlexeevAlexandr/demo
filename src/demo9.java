@@ -1,5 +1,5 @@
 import java.util.*;
-
+//sorting by the first digit, deleting duplicates
 public class demo9 {
     public static void main(String args []){
         int w=0;

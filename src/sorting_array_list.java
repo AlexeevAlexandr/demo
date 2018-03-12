@@ -1,12 +1,12 @@
 import java.util.*;
 
-public class demo10 {
+public class sorting_array_list {
     public static void main(String args[]) {
         //sort list on all letters
         ArrayList<String> list = new ArrayList<>();
         list.add("Novosad");
         list.add("Alexeev");
-        list.add("Potapov");
+        list.add("Potapav");
         list.add("Navosad");
         list.add("Alaxaev");
         list.add("Patapov");

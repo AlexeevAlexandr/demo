@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class demo7 {
+public class checking_on_enter_integer {   //checking on enter integer
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
