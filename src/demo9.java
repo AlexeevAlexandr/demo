@@ -13,7 +13,7 @@ public class demo9 {
                 w = in.nextInt();
                 if (w < 1) {
                 System.out.println("you enter incorrect size, try again");}
-            }catch(Exception e){ System.out.println("you enter incorrect size, try again");}
+            }catch(Exception e){ System.out.println("you enter incorrect size, try again "+e);}
         }while(w<1);
 
        //insertion strings in array

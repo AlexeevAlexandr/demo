@@ -50,6 +50,6 @@ class if_else_switch_case {
                     break;
             }
             System.out.println("Пора: " + season);
-        }catch(Exception e){System.out.println("Пора: you enter incorrect number, try again");}
+        }catch(Exception e){System.out.println("Пора: you enter incorrect number, try again "+e);}
     }
 }
