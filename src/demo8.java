@@ -1,10 +1,30 @@
 public class demo8{
-    public static void main(String [] args) {
-        int number =10;
-        int q=3, w=5, a=0;
-        for (int i = 0; i<number; i++){
-                if ((i%q==0) || (i%w==0)){a+=i;}}
-                System.out.print (a);
+    private static String toString(String ch){
+        return ch;
     }
+    public static void main(String [] args) {
+        String  a = "demo";
+
+        //simple toString
+        System.out.println(toString(a));
+
+        //print string one char each
+        for(int i=0; i<a.length();i++)
+        {
+            char q = a.charAt(i);
+            System.out.println(q);
+        }
+
+        System.out.println();
+
+        //print part of string
+        int start = 1, end =3;
+        char s [] = new char [end - start];
+        a.getChars(start, end, s, 0);
+        System.out.println(s);
+
+    }
+
+
 }
 
