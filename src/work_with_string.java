@@ -52,5 +52,10 @@ class work_with_string {
         String x = o.substring(4);//output part of string from 0 index till end
         out.println(z);
         out.println(x);
+
+        int start = 1, end =20; //print part of string
+        char h [] = new char [end - start];
+        w.getChars(start, end, h, 0);
+        System.out.println(h);
     }
 }

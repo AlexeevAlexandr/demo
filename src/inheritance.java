@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
-public class demo14 {
+//counting of volume
+public class inheritance {
     private double width;
     private double height;
     private double depth;
 
-    demo14(double w, double h, double d){
+    inheritance(double w, double h, double d){
         width=w;
         height=h;
         depth=d;
@@ -19,10 +20,10 @@ class dd{
         try {
             Scanner s = new Scanner(System.in);
             System.out.println("Enter: width, height and depth");
-            demo14 demo1 = new demo14(s.nextDouble(), s.nextDouble(), s.nextDouble());
+            inheritance demo1 = new inheritance(s.nextDouble(), s.nextDouble(), s.nextDouble());
             double vol;
             vol = demo1.volume();
-            System.out.println(vol);
+            System.out.println("Volume: "+vol);
         } catch (Exception e) {
             System.out.println("you enter incorrect information, try again");
             }

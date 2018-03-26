@@ -1,6 +1,6 @@
 import java.util.*;
 //sorting by the first digit, deleting duplicates
-public class demo9 {
+public class enter_and_sort_array {
     public static void main(String args []){
         int w=0;
         Scanner in = new Scanner(System.in);
