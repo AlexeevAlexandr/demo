@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class demo6 {
+class reverse_part_string {
     public static void main (String [] str) {
         String a;
         Scanner sc = new Scanner(System.in);
