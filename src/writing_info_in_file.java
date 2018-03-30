@@ -8,19 +8,18 @@ public class writing_info_in_file {
         Properties ht = new Properties();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         FileInputStream fin = null;
+
         try {
             fin = new FileInputStream("phone book.txt");
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found");
-        }
+        } catch (FileNotFoundException e) { System.out.println("File not found");}
+
         try {
             if (fin != null) {
                 ht.load(fin);
                 fin.close();
             }
-        } catch (Exception e) {
-            System.out.println("Error riding file");
-        }
+        } catch (Exception e){System.out.println("Error riding file");}
+
         do {
             System.out.println("Enter name or 'q' for exit");
             name = br.readLine();
