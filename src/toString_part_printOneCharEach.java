@@ -1,15 +1,13 @@
-public class demo8{
+public class toString_part_printOneCharEach{
     private static String toString(String ch){
         return ch;
     }
     public static void main(String [] args) {
         String  a = "demo";
 
-        //simple toString
-        System.out.println(toString(a));
+        System.out.println(toString(a));   //simple toString
 
-        //print string one char each
-        for(int i=0; i<a.length();i++)
+        for(int i=0; i<a.length();i++)     //print string one char each
         {
             char q = a.charAt(i);
             System.out.println(q);
@@ -17,8 +15,7 @@ public class demo8{
 
         System.out.println();
 
-        //print part of string
-        int start = 1, end =3;
+        int start = 1, end =3;              //print part of string
         char s [] = new char [end - start];
         a.getChars(start, end, s, 0);
         System.out.println(s);
