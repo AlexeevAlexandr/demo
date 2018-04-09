@@ -30,18 +30,18 @@ public class sort_list_of_string {
                 out.println("your sorted list:");
                 Collections.sort(list);
                 String letter = list.get(0).substring(0, 1);
-                boolean redline = true;
+                boolean read = true;
                 for (String word : list) {
                     if (!word.substring(0, 1).equals(letter)) {
-                        redline = true;
+                        read = true;
                         letter = word.substring(0, 1);
                     }
-                    if (redline) {
+                    if (read) {
                         out.println(word);
                     } else {
                         out.println(word);
                     }
-                    redline = false;
+                    read = false;
                 }
             } catch (Exception e) {
                 out.println("You enter incorrect number about quantity rows.\nNumber of rows must be digit and Integer\nif you want continue press y, for exit press any another button and ENTER");

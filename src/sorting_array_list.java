@@ -11,29 +11,34 @@ public class sorting_array_list {
         list.add("Alaxaev");
         list.add("Patapov");
 
-        Collections.sort(list);
-        String letter = list.get(0).substring(0, 1);
-        boolean redline = true;
-        System.out.print("List:\t");
-        for (String word : list) {
-            if (!word.substring(0, 1).equals(letter)) {
-                redline = true;
-                letter = word.substring(0, 1);
-            }
-            if (redline) {
-                System.out.print(word+" ");
-            } else {
-                System.out.print(word+" ");
-            }
-            redline = false;
-        }
-        System.out.println();
-
-        TreeSet<String> ts = new TreeSet<>(list);//sort array
-        String string = String.valueOf(ts)
+        String string = String.valueOf(list)
                 .replaceFirst("]", "")
                 .replaceFirst("\\[", "")
                 .replace(",", "");
-        System.out.println("Array:\t" + string);
+        System.out.print("Input list: "+string+"\n");
+
+        //sorting list method 1
+        Collections.sort(list);
+        String letter = list.get(0).substring(0, 1);
+        boolean read = true;
+        System.out.print("Sort list:\t");
+        for (String word : list) {
+            if (!word.substring(0, 1).equals(letter)) {
+                read = true;
+                letter = word.substring(0, 1);
+            }
+            System.out.print(read ? word+" " : word+" ");
+            read = false;
+        }
+        System.out.println();
+
+        //sorting list method 2
+        System.out.print("Sort list2: ");
+       TreeSet<String> ts = new TreeSet<>(list);//sort array
+        String str = String.valueOf(ts)
+                .replaceFirst("]", "")
+                .replaceFirst("\\[", "")
+                .replace(",", "");
+        System.out.println(str);
     }
 }

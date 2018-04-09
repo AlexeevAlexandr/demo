@@ -3,7 +3,7 @@ import java.util.Scanner;
 interface StringFunc {
     String func(String n);
 }
-class Lambda_revers {
+class Lambda_reverse {
     public static void main(String args[]) {
         System.out.print("Enter string\t");
         Scanner sc = new Scanner(System.in);

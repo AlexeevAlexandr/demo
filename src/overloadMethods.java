@@ -1,18 +1,16 @@
-import static java.lang.StrictMath.abs;
-
 public class overloadMethods {
     void test() {
         System.out.println("no parameters");
     }
-    void test(int а) {
-        System.out.println("a: "+а);
+    void test(int a) {
+        System.out.println("a: "+a);
     }
-    void test(int а, int b) {
-        System.out.println("a and b: "+а+" "+b);
+    void test(int a, int b) {
+        System.out.println("a and b: "+a+" "+b);
     }
-    double test(double а) {
-        System.out.println("double а: "+а);
-        return а+а;
+    double test(double a) {
+        System.out.println("double а: "+a);
+        return a+a;
     }
     void test(String a){
         System.out.println("String: "+a);
