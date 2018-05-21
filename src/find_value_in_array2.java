@@ -1,4 +1,4 @@
-public class demo {
+public class find_value_in_array2 {
     private static <T extends Comparable<T>, V extends T>
     boolean isIn(T x, V[] y) {
         for (V aY : y)
