@@ -22,7 +22,7 @@ public class Test {
                         {4, 8},
                 },
         };
-        int[][][] newActualArray = ArrayUtils.rotateClockwise(oldArray);
+        int[][][] newActualArray = Matrix.rotateClockwise(oldArray);
 
         if (!Arrays.deepEquals(newActualArray, newExpectedArray)) {
             throw new AssertionError();
@@ -34,7 +34,7 @@ public class Test {
     public static void main2() {
         int[][][] oldArray = {{{1}}};
         int[][][] newExpectedArray = {{{1}}};
-        int[][][] newActualArray = ArrayUtils.rotateClockwise(oldArray);
+        int[][][] newActualArray = Matrix.rotateClockwise(oldArray);
 
         if (!Arrays.deepEquals(newActualArray, newExpectedArray)) {
             throw new AssertionError();
@@ -45,7 +45,7 @@ public class Test {
 
     public static void main3() {
         int[][][] matrix = new int[1][1][0];
-        Object res = ArrayUtils.rotateClockwise(matrix);
+        Object res = Matrix.rotateClockwise(matrix);
         if (res != null) {
             throw new AssertionError();
         }
@@ -54,7 +54,7 @@ public class Test {
 
     public static void main4() {
         int[][][] matrix = null;
-        Object res = ArrayUtils.rotateClockwise(matrix);
+        Object res = Matrix.rotateClockwise(matrix);
         if (res != null) {
             throw new AssertionError();
         }
@@ -63,7 +63,7 @@ public class Test {
 
     public static void main5() {
         int[][][] matrix = new int[0][][];
-        Object res = ArrayUtils.rotateClockwise(matrix);
+        Object res = Matrix.rotateClockwise(matrix);
         if (res != null) {
             throw new AssertionError();
         }
@@ -72,7 +72,7 @@ public class Test {
 
     public static void main6() {
         int[][][] matrix = new int[10][10][11];
-        Object res = ArrayUtils.rotateClockwise(matrix);
+        Object res = Matrix.rotateClockwise(matrix);
         if (res != null) {
             throw new AssertionError();
         }
@@ -115,7 +115,7 @@ public class Test {
                         {32, 62, 92}
                 }
         };
-        int[][][] newActualArray = ArrayUtils.rotateClockwise(oldArray);
+        int[][][] newActualArray = Matrix.rotateClockwise(oldArray);
 
         if (!Arrays.deepEquals(newActualArray, newExpectedArray)) {
             throw new AssertionError();
@@ -126,7 +126,7 @@ public class Test {
 
     public static void main8() {
         int[][][] matrix = new int[][][]{{{0, 0}, {0, 0}}, {{0, 0}, {0}}};
-        Object res = ArrayUtils.rotateClockwise(matrix);
+        Object res = Matrix.rotateClockwise(matrix);
         if (res != null) {
             throw new AssertionError();
         }
@@ -135,7 +135,7 @@ public class Test {
 
     public static void main9() {
         int[][][] matrix = new int[][][]{{{0, 0}, {0, 0}}, {{0, 0}, {0, 0, 0}}};
-        Object res = ArrayUtils.rotateClockwise(matrix);
+        Object res = Matrix.rotateClockwise(matrix);
         if (res != null) {
             throw new AssertionError();
         }

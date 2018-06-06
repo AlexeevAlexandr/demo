@@ -1,4 +1,4 @@
-public class ArrayUtils {
+public class Matrix {
     public static int[][][] rotateClockwise(int[][][] arg) {
         int[][][] result;
         try{
