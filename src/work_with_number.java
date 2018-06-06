@@ -18,6 +18,8 @@ public class work_with_number {
         int g= (int) (random()*100);//return random the number (from 0 till 100)
         double q[]={3.5, 2,5,4,1};
         Arrays.sort(q);     //sort array of numbers
+        int z=Integer.parseInt(Integer.toBinaryString(123));//int to binary
+        System.out.println(z);
         System.out.println(Arrays.toString(q));
         System.out.println(t+"\n"+y+"\n"+r+"\n"+u+"\n"+i+"\n"+o+"\n"+p+"\n"+a+"\n"+b+"\n"+c+"\n"+d+"\n"+f+"\n"+g);
     }
