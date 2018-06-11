@@ -32,7 +32,7 @@ public class MyArray{
     @Override
     public String toString() {return Arrays.toString(data);}//allow print array use only "toString()"
 }
-class q{
+class Commit{
     public static void main(String[] args) {
         MyArray array = new MyArray();
         array.add(1);
