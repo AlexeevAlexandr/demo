@@ -1,15 +1,11 @@
 import java.util.Scanner;
 
-abstract class Book {
-    private String title;
-    private String author;
-    Book(String title, String author) {
-        this.title = title;
-        this.author = author;
+abstract class Books {
+    Books(String title, String author) {
     }
     abstract void display();
 }
-class MyBook extends Book{
+class MyBook extends Books{
     MyBook(String title, String author, int price) {
         super(title, author);
         System.out.println("Title: "+title);
@@ -27,7 +23,7 @@ public class Title_Author_Price {
         String author = scanner.nextLine();
         int price = scanner.nextInt();
         scanner.close();
-        Book book = new MyBook(title, author, price);
+        Books book = new MyBook(title, author, price);
         book.display();
     }
 }
