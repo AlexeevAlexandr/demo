@@ -2,7 +2,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Map_Lanbda {
+public class Map_Lambda {
     public static void main(String[] args) {
 
         String[] people = {"A","B","C","D","E","F","G","H","I","J"};

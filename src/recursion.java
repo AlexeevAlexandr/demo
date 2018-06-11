@@ -1,11 +1,11 @@
 public class recursion {
     public static void main(String[] args) {
-        f(1);
+        function(1);
     }
-    private static void f(int n){
+    private static void function(int n){
         System.out.println(n);
         if(n<7){
-            f(2*n);
+            function(2*n);
         }
         System.out.println(n);
     }

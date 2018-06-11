@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import static java.lang.System.out;
 
 public class MyArray{
     private  Object [] data;//create array of objects
@@ -43,16 +44,15 @@ class Commit{
         array.add(null);
         array.add(true);
         array.add("rt");
-        System.out.println(array.toString());
+        out.println(array.toString());
         array.remove(3);
-        System.out.println(array.toString());
+        out.println(array.toString());
         array.add(2, 10);
-        System.out.println(array.toString());
+        out.println(array.toString());
         array.change(3, 0);
-        System.out.println(array.toString());
-        System.out.println(array.size());
-        System.out.println(array.copy());
-        System.out.println(array.get(2));
-
+        out.println(array.toString());
+        out.println(array.size());
+        out.println(array.copy());
+        out.println(array.get(2));
     }
 }

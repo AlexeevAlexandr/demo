@@ -8,15 +8,15 @@ import java.util.Scanner;
 
 class pojo{
     private static String formattedDate;
-    private static String n;
-    private static String ci;
-    private static String co;
-    private static String nu;
+    private static String name;
+    private static String city;
+    private static String country;
+    private static String number;
     pojo(String name, String city, String country, int number, String date) throws ParseException {
-        n=name;
-        ci=city;
-        co=country;
-        nu=String.valueOf(number+1);
+        pojo.name =name;
+        pojo.city =city;
+        pojo.country =country;
+        pojo.number =String.valueOf(number+1);
         DateFormat readFormat = new SimpleDateFormat( "dd.MM.yyyy");
         DateFormat writeFormat = new SimpleDateFormat( "dd.MM.yyyy");
         Date x = readFormat.parse(date);
@@ -29,10 +29,10 @@ class pojo{
     }
     public static String demo() {
         StringBuilder sb = new StringBuilder();
-        sb.append(n).append(";");
-        sb.append(ci).append(";");
-        sb.append(co).append(";");
-        sb.append(nu).append(";");
+        sb.append(name).append(";");
+        sb.append(city).append(";");
+        sb.append(country).append(";");
+        sb.append(number).append(";");
         sb.append(formattedDate);
         return String.valueOf(sb);
     }

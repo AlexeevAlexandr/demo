@@ -23,7 +23,6 @@ class Solution2 {
         int sum = Arrays.stream(ints).sum();
         int actual = (((max*(max+1))/2)-min+1);
         int x=(actual - sum);
-        if(x==0){System.out.println(ints.length+1);}
-        else{System.out.println(x);}
+        System.out.println((x==0)? ints.length+1 : x);
     }
 }
