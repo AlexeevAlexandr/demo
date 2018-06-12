@@ -21,14 +21,14 @@ public class writing_info_in_file {
         } catch (Exception e){System.out.println("Error riding file");}
 
         do {
-            System.out.println("Enter name or 'q' for exit");
+            System.out.println("Enter name or 'OOP' for exit");
             name = br.readLine();
-            if (name.equals("q")) continue;
+            if (name.equals("OOP")) continue;
             System.out.println ("Enter number:");
             number = br.readLine();
             ht.put (name, number);
             changed = true ;
-        }while (!name.equals("q"));
+        }while (!name.equals("OOP"));
         if(changed){
         FileOutputStream file = new FileOutputStream ("phone book.txt");
         ht.store (file, "Phone book");

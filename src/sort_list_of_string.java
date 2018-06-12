@@ -51,6 +51,6 @@ public class sort_list_of_string {
                     if(!z.equals("y")){break;}
                 }catch(Exception d){out.print("you enter incorrect answer");}
             }
-        }while(!str.equals("q"));
+        }while(!str.equals("OOP"));
     }
 }

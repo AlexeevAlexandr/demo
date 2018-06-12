@@ -31,7 +31,7 @@ class API_Stream {
         maxVal.ifPresent(integer -> out.println("Max value: " + integer));
 
         Stream<Integer> sortedStream = myList.stream().sorted();
-        out.print("Sort list: ");
+        out.print("sort list: ");
         sortedStream.forEach(n -> out.print(n + " "));
         out.println();
 

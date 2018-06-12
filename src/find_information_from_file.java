@@ -6,7 +6,7 @@ public class find_information_from_file {
         String name, exit;
         System.out.println("welcome to the phone book");
         do {
-            System.out.println("Enter the name which you are looking for (or q for exit)");
+            System.out.println("Enter the name which you are looking for (or OOP for exit)");
             Properties ht = new Properties();
             FileInputStream list = null;
             try {
@@ -26,7 +26,7 @@ public class find_information_from_file {
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             name = br.readLine();
-            if (name.equals("q")){break;}
+            if (name.equals("OOP")){break;}
             String information = (String) ht.get(name);
             if (information != null) {
                 System.out.println(name + ": " + information);
@@ -36,6 +36,6 @@ public class find_information_from_file {
             System.out.println("Do you want continue y/n?");
             exit = br.readLine();
             if (!exit.equals("y")){System.out.println("bye");break;}
-        }while(!name.equals("q") && exit.equals("y"));
+        }while(!name.equals("OOP") && exit.equals("y"));
     }
 }

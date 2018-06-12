@@ -35,6 +35,6 @@ public class enter_and_sort_array {
         String string2 = Arrays.toString(result)
                 .replaceFirst("]", "")
                 .replaceFirst("\\[", "");
-        System.out.println("Sort list: "+ string2);
+        System.out.println("sort list: "+ string2);
     }
 }

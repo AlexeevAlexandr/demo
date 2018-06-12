@@ -21,7 +21,7 @@ public class sorting_array_list {
         Collections.sort(list);
         String letter = list.get(0).substring(0, 1);
         boolean read = true;
-        System.out.print("Sort list:\t");
+        System.out.print("sort list:\t");
         for (String word : list) {
             if (!word.substring(0, 1).equals(letter)) {
                 read = true;
@@ -33,7 +33,7 @@ public class sorting_array_list {
         System.out.println();
 
         //sorting list method 2
-        System.out.print("Sort list2: ");
+        System.out.print("sort list2: ");
        TreeSet<String> ts = new TreeSet<>(list);//sort array
         String str = String.valueOf(ts)
                 .replaceFirst("]", "")
