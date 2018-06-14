@@ -1,3 +1,5 @@
+package Matrix;
+
 public class Matrix {
     public static int[][][] rotateClockwise(int[][][] arg) {
         int[][][] result;

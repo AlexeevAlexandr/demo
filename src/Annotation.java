@@ -20,6 +20,6 @@ private static void myMath(String str, int i) {
     }
 }
             public static void main (String args [] ){
-                myMath("Test", 10);
+                myMath("Matrix.Test", 10);
             }
         }

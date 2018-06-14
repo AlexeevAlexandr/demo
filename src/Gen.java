@@ -27,7 +27,7 @@ class Gen <T, V> {
 class generality {
     public static void main(String args[]) {
 
-        Gen<Integer, String> iOb = new Gen<>(88, "Test" );
+        Gen<Integer, String> iOb = new Gen<>(88, "Matrix.Test" );
         Gen<String, Integer> iOb2 = new Gen<>("Test2", 99 );
 
         iOb.showType();
