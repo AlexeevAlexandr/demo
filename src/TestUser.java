@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static java.lang.System.out;
 
-public class Singleton_demo {
+public class TestUser {
     static final Map<String, Character> QUESTIONS = new HashMap<String, Character>() {
         {
             put("Thread is a process", 'N');
@@ -29,9 +29,9 @@ public class Singleton_demo {
         static int count;
 
         Main2(int count2) {
-            if (count2 >= 0 && count2 <= 3) {Main2.a = Singleton_demo.Main2.string1;}
-            if (count2 > 3 && count2 <= 7) {Main2.a = Singleton_demo.Main2.string2;}
-            if (count2 > 7 && count2 <= 11) {Main2.a = Singleton_demo.Main2.string3;}
+            if (count2 >= 0 && count2 <= 3) {Main2.a = TestUser.Main2.string1;}
+            if (count2 > 3 && count2 <= 7) {Main2.a = TestUser.Main2.string2;}
+            if (count2 > 7 && count2 <= 11) {Main2.a = TestUser.Main2.string3;}
         }
     }
     static class Main3 {
@@ -46,17 +46,17 @@ public class Singleton_demo {
 class Singleton{
     private static Singleton instance;
     private Singleton(){
-        for (Map.Entry<String, Character> me : Singleton_demo.QUESTIONS.entrySet()) {
+        for (Map.Entry<String, Character> me : TestUser.QUESTIONS.entrySet()) {
             out.println(me.getKey());
             out.print("Y or N\t");
-            Singleton_demo.Main2.q = Singleton_demo.Main3.sc.next().charAt(0);
-            Singleton_demo.Main2.w = Character.toUpperCase(Singleton_demo.Main2.q);
-            if (Singleton_demo.Main2.w == (me.getValue())) {
-                Singleton_demo.Main2.count++;
+            TestUser.Main2.q = TestUser.Main3.sc.next().charAt(0);
+            TestUser.Main2.w = Character.toUpperCase(TestUser.Main2.q);
+            if (TestUser.Main2.w == (me.getValue())) {
+                TestUser.Main2.count++;
             }
         }
-        new Singleton_demo.Main2(Singleton_demo.Main2.count);
-        out.println(Singleton_demo.Main2.a);
+        new TestUser.Main2(TestUser.Main2.count);
+        out.println(TestUser.Main2.a);
     }
     public static void getInstance(){
         if(instance == null){

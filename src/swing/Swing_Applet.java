@@ -1,8 +1,10 @@
+package swing;
+
 import javax.swing.*;
 import java.awt.*;
 
 /*
-<applet code = "Swing_Applet" width=220 height=90>
+<applet code = "swing.Swing_Applet" width=220 height=90>
 </applet>
  */
 public class Swing_Applet extends JApplet {

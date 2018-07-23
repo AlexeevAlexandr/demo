@@ -12,12 +12,12 @@ class Gen2 <T> {
 }
 class training {
     public static void main(String args[]) {
-        Gen2<Integer> iOb;
-        iOb = new Gen2<>(88);
+        Gen2<Integer> iOb = new Gen2<>(88);
         iOb.showType();
         int v = iOb.getob ();
         System.out.println("Знaчeниe: " + v);
         System.out.println();
+
         Gen2<String> strOb = new Gen2<>("Тест обобщений");
         strOb.showType();
         String str = strOb.getob();
