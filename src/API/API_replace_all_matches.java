@@ -1,3 +1,5 @@
+package API;
+
 import java.util.regex.*;
 
 public class API_replace_all_matches {
