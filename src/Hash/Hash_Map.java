@@ -1,3 +1,5 @@
+package Hash;
+
 import java.util.*;
 
 class demo2 <T, V> {
