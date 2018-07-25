@@ -12,7 +12,7 @@ public class Hash {
             this.amount = amount;
         }
 
-        public Integer getAmount() {
+        Integer getAmount() {
             return amount;
         }
 
@@ -28,16 +28,25 @@ public class Hash {
     public static void main(String[] args) {
         Map<String, Account> map = new HashMap<>();
 
+        //put to map data
         map.put("Sasha", new Account(100));
-        map.put("Peta", new Account(150));
+        map.put("Peta", new Account(55));
         System.out.println(map);
 
-        map.get("Sasha").income(-50);
+        //get data by key
+        map.get("Sasha").income(-80);
+        map.get("Peta").income(-50);
         System.out.println(map);
 
+        //insert change to all
         for (Map.Entry<String, Account> entry : map.entrySet()){
             entry.getValue().income(-5);
-
         }
+        System.out.println(map);
+
+        if (map.get("Peta").getAmount() == 0){
+            map.remove("Peta");
+        }
+        System.out.println(map);
     }
 }
