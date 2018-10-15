@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) {
         Sort sort = new Sort();
 
-        System.out.println(toString(sort.sort(new String [] {"B", "C", "A"})));
+        System.out.println(toString(sort.sort(new String [] {"B", "C", "method"})));
         System.out.println(toString(sort.sort(new String [] {"ACA", "ABA", "ABC"})));
         System.out.println(toString(sort.sort(new Integer [] {3, 2 , 1})));
         System.out.println(toString(sort.sort(new Object [] {33, 32 , 31})));

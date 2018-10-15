@@ -11,11 +11,11 @@ public class MyArray{
     }
 
     MyArray() {data = new Object[0];}
-    public Object get (int index){return data[index];}//allow get object
-    public void change (int index, int newValue){data [index] = newValue;}//allow change object in the specified index
+    Object get(int index){return data[index];}//allow get object
+    void change(int index, int newValue){data [index] = newValue;}//allow change object in the specified index
     public void add(Object newValue){add(data.length, newValue);}//allow add object to array
-    public MyArray copy(){return new MyArray(this);}//allow copy array
-    public void remove (int index) {//allow remove object
+    MyArray copy(){return new MyArray(this);}//allow copy array
+    void remove(int index) {//allow remove object
         Object[] array2 = new Object[data.length - 1];
         System.arraycopy(data, 0, array2, 0, index);
         System.arraycopy(data, index + 1, array2, index + 1 - 1, data.length - (index + 1));
@@ -29,7 +29,7 @@ public class MyArray{
         data = array2;
     }
 
-    public int size (){return data.length;}//allow get size of array
+    int size(){return data.length;}//allow get size of array
     @Override
     public String toString() {return Arrays.toString(data);}//allow print array use only "toString()"
 }

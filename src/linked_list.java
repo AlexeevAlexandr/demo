@@ -9,6 +9,8 @@ class address{
         state = st;
         code = cd;
     }
+
+    @Override
     public String toString(){
         return name +"\n"+street+"\n"+city+" "+state+" "+code;
     }
@@ -19,6 +21,7 @@ public class Linked_List {
         ml.add(new address("Alexeev Alexandr", "Bestujeva", "Kiev", "Ukraine", "61801"));
         ml.add(new address("Novosad Roman", "Bestujeva", "Kiev", "Ukraine", "635561"));
 
-        for(address element : ml) System.out.println(element+"\n");
+        for(address element : ml)
+            System.out.println(element+"\n");
     }
 }

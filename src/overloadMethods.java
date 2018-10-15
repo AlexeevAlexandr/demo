@@ -1,4 +1,4 @@
-public class overloadMethods {
+class overloadMethods {
     void test() {
         System.out.println("no parameters");
     }

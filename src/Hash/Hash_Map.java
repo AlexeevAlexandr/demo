@@ -18,15 +18,18 @@ class demo2 <T, V> {
     V getob2() {
         return ob2;
     }
+
 }
 public class Hash_Map {
     public static void main(String args[]){
         demo2<String, Double> iOb = new demo2<>("Jem Been", 350.25);
         demo2<String, Double> iOb2 = new demo2<>("Jon Connor", 135.78);
+        demo2<String, Double> iOb3 = new demo2<>("Bob Marley", 125.98);
 
             HashMap<String, Double> hm = new HashMap<>();
             hm.put(iOb.getob1(), iOb.getob2());
             hm.put(iOb2.getob1(), iOb2.getob2());
+            hm.put(iOb3.getob1(), iOb3.getob2());
 
             Set<Map.Entry<String, Double>> set = hm.entrySet();
             for (Map.Entry<String, Double> me : set) {

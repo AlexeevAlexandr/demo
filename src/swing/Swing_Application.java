@@ -114,7 +114,7 @@ class Swing_Application implements ActionListener {
         });
 
         JToolBar toolBar = new JToolBar("Debug");//create toolbar
-        ImageIcon set = new ImageIcon("C:\\Documents and Settings\\Fart\\Рабочий стол\\A.gif");
+        ImageIcon set = new ImageIcon("C:\\Documents and Settings\\Fart\\Рабочий стол\\method.gif");
         ImageIcon clear = new ImageIcon("C:\\Documents and Settings\\Fart\\Рабочий стол\\B.gif");
         ImageIcon resume = new ImageIcon("C:\\Documents and Settings\\Fart\\Рабочий стол\\C.PNG");
 

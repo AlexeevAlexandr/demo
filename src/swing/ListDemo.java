@@ -66,6 +66,6 @@ public class ListDemo implements ListSelectionListener{
     }
 
     public static void main (String args []){
-        SwingUtilities.invokeLater(ListDemo2::new);
+        SwingUtilities.invokeLater(ListDemo::new);
     }
 }

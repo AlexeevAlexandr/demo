@@ -28,7 +28,7 @@ public class JavaFX extends Application {
         CheckBox checkBox = new CheckBox("AA");
         CheckBox checkBox2 = new CheckBox("BB");
         Button confirm = new Button("Confirm selection");
-        RadioButton a = new RadioButton("A");
+        RadioButton a = new RadioButton("method");
         RadioButton b = new RadioButton("B");
         //create group
         ToggleGroup tg = new ToggleGroup();

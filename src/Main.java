@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Main {
     private static final Map<String, Character> QUESTIONS = new HashMap<String, Character>() {
         {
-            put("A Thread is a process", 'N');
-            put("A List cannot contain duplicates", 'N');
-            put("A Set can contain duplicates", 'N');
+            put("method Thread is a process", 'N');
+            put("method List cannot contain duplicates", 'N');
+            put("method Set can contain duplicates", 'N');
             put("Java is platform independent", 'Y');
             put("Java supports copy constructors like C++", 'Y');
             put("The primitive data types supported by the Java programming language are: byte, short, int, long, float, double, boolean, char", 'Y');

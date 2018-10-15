@@ -10,7 +10,7 @@ public class find_information_from_file {
             Properties ht = new Properties();
             FileInputStream list = null;
             try {
-                list = new FileInputStream("phone book.txt");
+                list = new FileInputStream("resources\\phone book.txt");
             } catch (FileNotFoundException e) {
                 System.out.println("File not found");
             }

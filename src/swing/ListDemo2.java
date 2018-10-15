@@ -13,7 +13,7 @@ public class ListDemo2 implements ListSelectionListener{
 
     ListDemo2(){
 
-        JFrame jfrm = new JFrame("Who is who in ouer family");
+        JFrame jfrm = new JFrame("Who is who in our family");
 
         jfrm.setLayout(new GridLayout());
 
@@ -22,7 +22,6 @@ public class ListDemo2 implements ListSelectionListener{
         jfrm.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         jlst = new JList<>(names);
-
 
         jlst.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 

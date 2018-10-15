@@ -142,7 +142,7 @@ class Swing_Application2 implements ActionListener {
     }
 
     private void makeActions() {
-        ImageIcon setIcon = new ImageIcon("C:\\Documents and Settings\\Fart\\Рабочий стол\\A.gif");
+        ImageIcon setIcon = new ImageIcon("C:\\Documents and Settings\\Fart\\Рабочий стол\\method.gif");
         ImageIcon clearIcon = new ImageIcon("C:\\Documents and Settings\\Fart\\Рабочий стол\\B.gif");
         ImageIcon resumeIcon = new ImageIcon("C:\\Documents and Settings\\Fart\\Рабочий стол\\C.png");
         debugAction = new DebugAction("Set", setIcon, KeyEvent.VK_S, KeyEvent.VK_B, "Set");

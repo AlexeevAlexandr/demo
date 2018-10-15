@@ -8,8 +8,8 @@ import java.util.Arrays;
 class Tests {
 
     private Main main = new Main();
-    private Object [] string1 = {"B", "C", "A"};
-    private Object [] string2 = {"A", "B", "C"};
+    private Object [] string1 = {"B", "C", "method"};
+    private Object [] string2 = {"method", "B", "C"};
     private Object [] string3 = main.test(string1);
 
     public void testLaunch() {

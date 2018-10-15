@@ -6,7 +6,7 @@ class view_information_from_file{
         Properties ht = new Properties();
         FileInputStream fin = null;
         try {
-            fin = new FileInputStream("phone book.txt");
+            fin = new FileInputStream("resources/phone book.txt");
         }catch (FileNotFoundException e){System.out.println("File not found");}
         try{
             if (fin != null) {
